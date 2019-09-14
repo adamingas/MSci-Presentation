@@ -1,0 +1,191 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{pinkdolphin}{online}{}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Cute and clever, the Amazon pink river dolphins are among the most fascinating wildlife species to be seen on a river cruise of the Peruvian Amazon.}
+      \field{day}{13}
+      \field{langid}{american}
+      \field{month}{4}
+      \field{title}{5 amazing facts about the Amazon pink river dolphin}
+      \field{titleaddon}{Aqua Expeditions}
+      \field{urlday}{13}
+      \field{urlmonth}{9}
+      \field{urlyear}{2019}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:/home/spanashis/Zotero/storage/QTTU3YPP/facts-amazon-pink-river-dolphin.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.aquaexpeditions.com/blog/amazon/facts-amazon-pink-river-dolphin/
+      \endverb
+      \verb{url}
+      \verb https://www.aquaexpeditions.com/blog/amazon/facts-amazon-pink-river-dolphin/
+      \endverb
+    \endentry
+    \entry{charles_tapir_2019}{inreference}{}
+      \name{author}{1}{}{%
+        {{hash=374e4e1a2c1cdb3507b943a5f5f0d33d}{%
+           family={Charles},
+           familyi={C\bibinitperiod},
+           given={Sharp},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{374e4e1a2c1cdb3507b943a5f5f0d33d}
+      \strng{fullhash}{374e4e1a2c1cdb3507b943a5f5f0d33d}
+      \strng{bibnamehash}{374e4e1a2c1cdb3507b943a5f5f0d33d}
+      \strng{authorbibnamehash}{374e4e1a2c1cdb3507b943a5f5f0d33d}
+      \strng{authornamehash}{374e4e1a2c1cdb3507b943a5f5f0d33d}
+      \strng{authorfullhash}{374e4e1a2c1cdb3507b943a5f5f0d33d}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A tapir ( {TAY}-pər, {TAY}-peer or tə-{PEER}, {TAY}-pee-ər) is a large, herbivorous mammal, similar in shape to a pig, with a short, prehensile nose trunk. Tapirs inhabit jungle and forest regions of South America, Central America, and Southeast Asia. There are four widely recognized extant species of tapirs, all of the family Tapiridae and the genus Tapirus. They are the Brazilian tapir, the Malayan tapir, the Baird's tapir, and the mountain tapir. In 2013, a group of researchers claimed to have identified a fifth species of tapir, the kabomani tapir. However, the existence of the kabomani tapir as a distinct species has been widely disputed, and recent genetic evidence further suggests it is actually nested within T. terrestris. The four species that have been evaluated (all except the kabomani) are all classified on the {IUCN} Red List as Endangered or Vulnerable. The tapirs have a number of extinct relatives in the superfamily Tapiroidea. The closest extant relatives of the tapirs are the other odd-toed ungulates, which include horses, donkeys, zebras and rhinoceroses.}
+      \field{booktitle}{Wikipedia}
+      \field{day}{1}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{note}{Page Version {ID}: 913557340}
+      \field{title}{Tapir}
+      \field{urlday}{13}
+      \field{urlmonth}{9}
+      \field{urlyear}{2019}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:/home/spanashis/Zotero/storage/V852SDNY/index.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/w/index.php?title=Tapir&oldid=913557340
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Tapir&oldid=913557340
+      \endverb
+    \endentry
+    \entry{kruskal_multidimensional_1964}{article}{}
+      \name{author}{1}{}{%
+        {{hash=349acb2542d7ad8e29fe46811c9ed552}{%
+           family={Kruskal},
+           familyi={K\bibinitperiod},
+           given={J.\bibnamedelimi B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{349acb2542d7ad8e29fe46811c9ed552}
+      \strng{fullhash}{349acb2542d7ad8e29fe46811c9ed552}
+      \strng{bibnamehash}{349acb2542d7ad8e29fe46811c9ed552}
+      \strng{authorbibnamehash}{349acb2542d7ad8e29fe46811c9ed552}
+      \strng{authornamehash}{349acb2542d7ad8e29fe46811c9ed552}
+      \strng{authorfullhash}{349acb2542d7ad8e29fe46811c9ed552}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychometrika}
+      \field{month}{3}
+      \field{number}{1}
+      \field{shortjournal}{Psychometrika}
+      \field{title}{Multidimensional scaling by optimizing goodness of fit to a nonmetric hypothesis}
+      \field{volume}{29}
+      \field{year}{1964}
+      \field{dateera}{ce}
+      \field{pages}{1\bibrangedash 27}
+      \range{pages}{27}
+    \endentry
+    \entry{css_diff_abund}{article}{}
+      \name{author}{4}{}{%
+        {{hash=7e108fd8bd312bf6fbd00788f1c7105e}{%
+           family={Paulson},
+           familyi={P\bibinitperiod},
+           given={Joseph\bibnamedelima N.},
+           giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=d58f53d034b78ffe0a70342d9637d99a}{%
+           family={Stine},
+           familyi={S\bibinitperiod},
+           given={O.\bibnamedelimi Colin},
+           giveni={O\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=123d7bd5db626a55c5d9be58b1d3fdd0}{%
+           family={Bravo},
+           familyi={B\bibinitperiod},
+           given={Héctor\bibnamedelima Corrada},
+           giveni={H\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=d1158162106b04fb306da1364c6754d2}{%
+           family={Pop},
+           familyi={P\bibinitperiod},
+           given={Mihai},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{fa40659562f64ce21ee2c7f021af22eb}
+      \strng{fullhash}{77be2a5b3f7e10192f1a9de9bf266fe0}
+      \strng{bibnamehash}{fa40659562f64ce21ee2c7f021af22eb}
+      \strng{authorbibnamehash}{fa40659562f64ce21ee2c7f021af22eb}
+      \strng{authornamehash}{fa40659562f64ce21ee2c7f021af22eb}
+      \strng{authorfullhash}{77be2a5b3f7e10192f1a9de9bf266fe0}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature methods}
+      \field{number}{12}
+      \field{shortjournal}{Nat Methods}
+      \field{title}{Robust methods for differential abundance analysis in marker gene surveys}
+      \field{volume}{10}
+      \field{pages}{1200\bibrangedash 1202}
+      \range{pages}{3}
+    \endentry
+    \entry{torgerson_multidimensional_1952}{article}{}
+      \name{author}{1}{}{%
+        {{hash=1c9dd7329003154133b72ca3027ef0b8}{%
+           family={Torgerson},
+           familyi={T\bibinitperiod},
+           given={Warren\bibnamedelima S.},
+           giveni={W\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{1c9dd7329003154133b72ca3027ef0b8}
+      \strng{fullhash}{1c9dd7329003154133b72ca3027ef0b8}
+      \strng{bibnamehash}{1c9dd7329003154133b72ca3027ef0b8}
+      \strng{authorbibnamehash}{1c9dd7329003154133b72ca3027ef0b8}
+      \strng{authornamehash}{1c9dd7329003154133b72ca3027ef0b8}
+      \strng{authorfullhash}{1c9dd7329003154133b72ca3027ef0b8}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{1}
+      \field{journaltitle}{Psychometrika}
+      \field{month}{12}
+      \field{number}{4}
+      \field{shortjournal}{Psychometrika}
+      \field{shorttitle}{Multidimensional scaling}
+      \field{title}{Multidimensional scaling: I. Theory and method}
+      \field{volume}{17}
+      \field{year}{1952}
+      \field{dateera}{ce}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

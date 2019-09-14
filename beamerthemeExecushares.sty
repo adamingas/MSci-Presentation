@@ -8,7 +8,7 @@
 \usepackage{tikz}
 \usetikzlibrary{calc}
 \usepackage[none]{hyphenat}
-%\usepackage{fontspec}
+\usepackage{fontspec}
 %\defaultfontfeatures{Ligatures=TeX}
 
 \newif\ifbeamer@pixelitem
@@ -24,20 +24,21 @@
 \definecolor{ExecusharesBlue}{RGB}{22,190,207}
 \definecolor{ExecusharesWhite}{RGB}{255,255,243}
 \definecolor{ExecusharesGrey}{RGB}{107,110,108}
-
+\definecolor{LightCyan}{rgb}{0.88,1,1}
+\definecolor{LightPink}{rgb}{1,0.91,0.88}
 % use Adobe's Source Pro fonts:
 % Source Serif Pro: https://github.com/adobe-fonts/source-serif-pro
 % Source Sans Pro: https://github.com/adobe-fonts/source-sans-pro
 % Source Code Pro: https://github.com/adobe-fonts/source-code-pro
-% \setmainfont{Source Serif Pro}
-% \setsansfont{Source Sans Pro}
-% \setmonofont{Source Code Pro}
+ \setmainfont{Source Serif Pro}
+ \setsansfont{Source Sans Pro}
+ \setmonofont{Source Code Pro}
 
 % To use with pdflatex,
 % comment the fontspec package at the top
-\usepackage{sourceserifpro}
-\usepackage{sourcesanspro}
-\usepackage{sourcecodepro}
+%\usepackage{sourceserifpro}
+%\usepackage{sourcesanspro}
+%\usepackage{sourcecodepro}
 
 % set colours
 \setbeamercolor{itemize item}{fg=ExecusharesBlue}
@@ -46,8 +47,8 @@
 \setbeamercolor{section in toc}{fg=ExecusharesBlack}
 
 % set fonts
-\setbeamerfont{itemize/enumerate body}{size=\large}
-\setbeamerfont{itemize/enumerate subbody}{size=\normalsize}
+\setbeamerfont{itemize/enumerate body}{size=\Large}
+\setbeamerfont{itemize/enumerate subbody}{size=\large}
 \setbeamerfont{itemize/enumerate subsubbody}{size=\small}
 
 \ifbeamer@pixelitem
@@ -82,6 +83,7 @@
 \setbeamertemplate{caption}{\tiny\insertcaption}
 \setbeamertemplate{caption label separator}{}
 
+\setbeamertemplate{footline}{\vspace{6.7pt}}
 % since I don't know a better way to do this, these are all switches
 % doing `\setcounter{showProgressBar}{0}` will turn the progress bar off (I turn it off for Appendix slides)
 % etc
