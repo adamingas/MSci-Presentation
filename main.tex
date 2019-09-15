@@ -221,7 +221,7 @@ Sequncing => OTUs; genetic proxies for species. Sequences clustered with 97\% si
 			\only<2>{\includegraphics[width=\textwidth]{map1}}
 			\only<3>{\includegraphics[width=\textwidth]{selectedrivers}}
 		\end{frame}
-\note[itemize]{
+\note[itemize]{\large
 \item Collected 164 samples from northern peruvian rivers
 \item The rivers can be seen in this photo highlighted by the yellow colour
 \item Most abundand sequences in each otu were matched with a taxonomy. OTUs without one where discarded
@@ -257,12 +257,12 @@ Sequncing => OTUs; genetic proxies for species. Sequences clustered with 97\% si
 		\only<9>{\centering \includegraphics[height=0.7\textheight]{histogramofcountdatacss}}
 		\only<10>{\centering \includegraphics[height= 0.7\textheight]{histogramofcountdatacsslog}}
 		\end{frame}
-\note[itemize]{
+\note[itemize]{\large
 \item Ended up with 164 samples and a totla of 675 OTUs. Sparse matrix mostly zeroes. Thought appropriate to use dimensionality reduction
 \item used oridnation methods => common in ecology for uncovering patterns in data
 \item Principal components analysis finds axis with max variance and then orthogonal with second most
 \item PCoA is generalisation of PCA. We can calculate dissimilarities between samples using distance metrics other than euclidean and then perform eigenanalysis on the distance matrix of the samples rather than covariance matrix. Used bray curtis commonly used in ecological studies. 
-\item nmds preserves order relations in dissimilarities between samples in the projection of data. EXAMPLE the  pairs of closest samples have to also be represented by the smallest interpoint distance in the ordination projection. 
+}\note[itemize]{\item nmds preserves order relations in dissimilarities between samples in the projection of data. EXAMPLE the  pairs of closest samples have to also be represented by the smallest interpoint distance in the ordination projection. 
 \item high correlation
 \item high variance in total read counts per sample. Used css normalisation (common method) to reduce variance. Log reduces further
 }
@@ -282,7 +282,7 @@ Sequncing => OTUs; genetic proxies for species. Sequences clustered with 97\% si
 				
 				\only<6>{\centering \includegraphics[height= 0.75\textheight]{groupsamp2}}
 		\end{frame}
-\note[itemize]{
+\note[itemize]{\large
 \item TEsting the classifiers will be affected by the location of the samples in the training and test sets. 
 \item Splitting the data set in different ways is akin to testing the classifiers under different consitions
 \item e.g. In maximally similar setting we simulate testing the models in geographical regions they have already seen
