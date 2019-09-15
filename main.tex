@@ -1,6 +1,8 @@
 %!TEX program = xelatex
-\documentclass[xcolor={table},show notes]{beamer}
+\documentclass[xcolor={table}, notes]{beamer}
 \usepackage[space]{grffile}
+\setbeameroption{show only notes}
+
 \usepackage[english]{babel}	
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -144,7 +146,7 @@ environmental DNA data}
 \end{frame}
 \begin{frame}
 \frametitle{\LARGE Genomics; A new hope?}
-\begin{itemize}
+\only<1,3->{ \begin{itemize}
 	\item Sanger Sequencing 1977
 	\pause
 	\item Barcoding and taxonomic reference libraries
@@ -152,9 +154,11 @@ environmental DNA data}
 	\item Next Generation Sequencing 
 	\pause
 	\item Costs go down by orders of magnitude  
-\end{itemize}
+\end{itemize}}
+\only<2>{\centering
+\includegraphics[height=0.85\textheight]{genomicsanewhopelow}}
 \end{frame}
-\note[itemize]{
+\note[itemize]{ \normalsize
 \item The invention in 1977 of Sanger-based DNA sequencing3 which revolu-
 tionised all branches of the biological sciences, could not be used for environmental bulk
 samples because they contained potentially thousands of species, and separating them for
@@ -165,14 +169,14 @@ sequencing was prohibitively difficult.
 \item NGS method of high-throughput multi species identification using degraded
 DNA found in the environment (
 
-\item Costs went down by orders of magnitude  }
+\item Costs went down by orders of magnitude and made DNA sequencing available to ecological studies}
 \begin{frame}
 	\frametitle{\LARGE Genomics; A new hope?}
 	\begin{columns}
 		\column{0.25\textwidth}
 		\begin{center}
 			\includegraphics[width=\textwidth]{samplingfromenvironment}
-			Sampling from Environment
+			Sampling from the Environment and Isolating the DNA
 		\end{center}
 		\column{0.25\textwidth}
 		\uncover<2->{\centering
@@ -194,11 +198,11 @@ DNA found in the environment (
 \end{frame}
 
 \begin{frame}
-	\frametitle{OTUs}
+	\frametitle{\Large Operational Taxonomic Units}
 	\includegraphics[width=\textwidth]{otu}
 \end{frame}
 \note{
-Sequncing => OTUs; genetic proxies for species. Sequences clustered with 97\% similarity and are given a signle otu name and taxonomy. Number of sequences => read counts}
+Sequncing => OTUs; genetic proxies for species. Sequences clustered with 97\% similarity and are given a signle otu name and taxonomy. Number of sequences in an OTU read => read counts}
 	
 	
 	\section{Data}
@@ -218,8 +222,8 @@ Sequncing => OTUs; genetic proxies for species. Sequences clustered with 97\% si
 			\only<3>{\includegraphics[width=\textwidth]{selectedrivers}}
 		\end{frame}
 \note[itemize]{
-\item
-\item
+\item Collected 164 samples from northern peruvian rivers
+\item The rivers can be seen in this photo highlighted by the yellow colour
 \item Most abundand sequences in each otu were matched with a taxonomy. OTUs without one where discarded
 \item
 \item We also collected metadata about each sample. This included water colour and location of the sample}
@@ -257,8 +261,8 @@ Sequncing => OTUs; genetic proxies for species. Sequences clustered with 97\% si
 \item Ended up with 164 samples and a totla of 675 OTUs. Sparse matrix mostly zeroes. Thought appropriate to use dimensionality reduction
 \item used oridnation methods => common in ecology for uncovering patterns in data
 \item Principal components analysis finds axis with max variance and then orthogonal with second most
-\item PCoA is generalisation which does eigen analysis on a differetnet distance metric than euclidean. Used bray curtis commonly used in ecological studies
-\item nmds preserves order relations in dissimilarities between samples in the projection of data. EXAMPLE
+\item PCoA is generalisation of PCA. We can calculate dissimilarities between samples using distance metrics other than euclidean and then perform eigenanalysis on the distance matrix of the samples rather than covariance matrix. Used bray curtis commonly used in ecological studies. 
+\item nmds preserves order relations in dissimilarities between samples in the projection of data. EXAMPLE the  pairs of closest samples have to also be represented by the smallest interpoint distance in the ordination projection. 
 \item high correlation
 \item high variance in total read counts per sample. Used css normalisation (common method) to reduce variance. Log reduces further
 }
@@ -278,6 +282,13 @@ Sequncing => OTUs; genetic proxies for species. Sequences clustered with 97\% si
 				
 				\only<6>{\centering \includegraphics[height= 0.75\textheight]{groupsamp2}}
 		\end{frame}
+\note[itemize]{
+\item TEsting the classifiers will be affected by the location of the samples in the training and test sets. 
+\item Splitting the data set in different ways is akin to testing the classifiers under different consitions
+\item e.g. In maximally similar setting we simulate testing the models in geographical regions they have already seen
+\item In maximaly dissimilar, we do the exact opposite by isolating the test from train
+\item we also tried random sampling}
+
 		\begin{frame}
 			\frametitle{Model evaluation}
 			\begin{itemize}
@@ -324,8 +335,9 @@ Results presented in confusion matrix and accuracy:
 
 \begin{frame}
 	\frametitle{Best of Maximally similar}
-  	\setbeamertemplate{footline}{\vspace{0pt}}
-	\fontsize{11pt}{11}\selectfont
+  %	\setbeamertemplate{footline}{\vspace{0pt}}
+	\setbeamertemplate{footline}{}
+	\fontsize{9pt}{11}\selectfont
 	\setlength\tabcolsep{3pt}
 	\begin{tabular}{l c  c c}
 		\toprule
@@ -399,7 +411,7 @@ Results presented in confusion matrix and accuracy:
 \begin{frame}
 		\frametitle{Best of Maximally Dissimilar}
 		 \setbeamertemplate{footline}{\vspace{0pt}}
-		\fontsize{11pt}{12}\selectfont
+		\fontsize{11pt}{13}\selectfont
 		\setlength\tabcolsep{3pt} 
 		
 			\begin{tabular}{l c  c c}
@@ -431,6 +443,49 @@ Results presented in confusion matrix and accuracy:
 		\end{tabular}
 \end{frame}
 
+\begin{frame}
+	\frametitle{Bayesian Logistic Regression}
+		\setbeamertemplate{footline}{}
+	\fontsize{9pt}{11}\selectfont
+	\setlength\tabcolsep{6pt}
+				\setbeamertemplate{itemize/enumerate body begin}{\large}
+	\begin{itemize}
+		\item<+-> Sampling is very slow and poor when using any OTU or PCoA features.
+		\item<+-> Only works with 20 dimensions of NMDS
+		\item<+-> Produces better results than Maximum Likelihood version of Logistic Regression using same feature set
+	\end{itemize}
+	\centering
+
+	\onslide<+->{ \begin{tabular}{l c  c c}
+
+	\toprule
+	&\multicolumn{2}{c}{Confusion Matrix} & Accuracy\\
+	Features used & Predicted Black&Predicted White&\\
+	\midrule
+	\multirow{2}{*}{Max. Sim. NMDS $L_1$} &13 &8&\multirow{2}{*}{95.12\%}\\
+	&	0&143&\\
+	\cmidrule{2-3}
+	\multirow{2}{*}{Max. Sim. NMDS $L_2$} &8&13&\multirow{2}{*}{92.07\%}\\
+	&	0&143&\\
+		\multirow{2}{*}{Max. Dissim. NMDS $L_1$} &3 &18&\multirow{2}{*}{83.54\%}\\
+	&	9&134&\\
+	\cmidrule{2-3}
+	\multirow{2}{*}{Max. Dissim. NMDS $L_2$} &0&21&\multirow{2}{*}{92.07\%}\\
+	&	21&140&\\
+	\bottomrule
+\end{tabular}}
+
+\end{frame}
+\begin{frame}
+	\frametitle{Conclusions}
+	\begin{itemize}
+	\item<+-> Maximum Dissimilarity is a harder setting than similarity for prediction
+	\item<+-> CSS normalisation and Log transformation produce the best feature set. Ordination methods may not be useful.
+	\item<+-> Only a small set of taxonomic Orders are contributing to prediction
+	\item<+-> Between Random Forest and Logistic regression there is no significant difference in predictive ability.
+	\item<+-> Bayesian methods are promising but slow
+	\end{itemize}
+\end{frame}
 	\appendix
 	
 	\backupbegin
